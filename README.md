@@ -27,16 +27,19 @@ The code for a route is called an "application", and each can (optionally) be in
 
 # Single-SPA Setup
 
-need to decide what to split out from app (tentative)
-https://single-spa.js.org/docs/separating-applications
+Recommended Approach (tentative)
 
-- Recommended Approach (tentative)
-  - For the purposes of decoupling as much as possible we should take the approach of: if unsure, keep as 1 MFE unless very decoupled with large business model distinction
-  - [**Recommended Setup**](https://single-spa.js.org/docs/recommended-setup/)
-  - other recommended setups to consider
-    - https://nx.dev/concepts/module-federation/micro-frontend-architecture
+- For the purposes of decoupling as much as possible we should take the approach of: if unsure, keep as 1 MFE unless very decoupled with large business model distinction
+- [**Recommended Setup**](https://single-spa.js.org/docs/recommended-setup/)
+- other recommended setups to consider
+  - https://nx.dev/concepts/module-federation/micro-frontend-architecture
 
 # Splitting up applications
+
+[Different types of MFEs for Single-SPA JS](https://single-spa.js.org/docs/module-types)
+
+need to decide what to split out from app (tentative)
+https://single-spa.js.org/docs/separating-applications
 
 **Options**
 
@@ -126,9 +129,9 @@ Common examples of utility modules include styleguides, authentication helpers, 
 
 ### TODO
 
-1. Test optimal architecture (basically every MFE needs to interact with the map)
-2. Test optimal layout (basically every MFE needs to interact with the map)
-3. Look at security concerns (in the works by Wei Hong's team)
+1. Find suitable architecture (basically every MFE needs to interact with the map)
+2. Find suitable layout (basically every MFE needs to interact with the map)
+3. Look at security concerns specifically content security policy(in the works by Wei Hong's team)
 
 #### Comments
 
