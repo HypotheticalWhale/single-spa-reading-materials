@@ -1,237 +1,1314 @@
-<!DOCTYPE html><html><head>
-      <title>index</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:///c:\Users\User\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
-      
-      
-      
-      
-      
-      <style>
-      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single-SPA Reading Materials</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      </style>
-      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    // your code here
-  });
-</script></head><body for="html-export">
-    
-    
-      <div class="crossnote markdown-preview  ">
-      
-<h1 id="table-of-contents">Table of Contents </h1>
-<ul>
-<li><a href=".md#Resources">Resources</a></li>
-<li><a href=".md#Introduction">Introduction</a></li>
-<li><a href=".md#Single-SPA Setup">Single-SPA Setup</a></li>
-<li><a href=".md#Splitting up applications">Splitting up applications</a></li>
-<li><a href=".md#Shared Dependencies">Shared Dependencies</a></li>
-<li><a href=".md#State Management">State Management</a>
-<ul>
-<li><a href=".md#UI State">UI State</a></li>
-<li><a href=".md#Global state">Global state</a></li>
-<li><a href=".md#Inter-app communication">Inter-app communication</a></li>
-</ul>
-</li>
-<li><a href=".md#Style Management">Style Management</a></li>
-<li><a href=".md#Remarks">Remarks</a></li>
-</ul>
-<h1 id="resources">Resources </h1>
-<ul>
-<li><a href="https://www.canva.com/design/DAF9StVLMd4/ixPbuuAWhrELQHzIo6btNA/edit?utm_content=DAF9StVLMd4&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton"><strong>Single-SPA Brief - By Samuel</strong></a></li>
-<li><a href="https://martinfowler.com/articles/micro-frontends.html">https://martinfowler.com/articles/micro-frontends.html</a></li>
-</ul>
-<h1 id="introduction">Introduction </h1>
-<p>Single-SPA Creator on what is a <a href="https://youtu.be/3EUfbnHi6Wg?si=pLOOe8wWSifV0fn3">MFE</a></p>
-<p>Single-SPA is a top level router. When a route is active, it downloads and executes the code for that route.</p>
-<p>The code for a route is called an "application", and each can (optionally) be in its own git repository, have its own CI process, and be separately deployed. The applications can all be written in the same framework, or they can be implemented in different frameworks.</p>
-<h1 id="single-spa-setup">Single-SPA Setup </h1>
-<p>need to decide what to split out from app (tentative)<br>
-<a href="https://single-spa.js.org/docs/separating-applications">https://single-spa.js.org/docs/separating-applications</a></p>
-<ul>
-<li>Recommended Approach (tentative)
-<ul>
-<li>For the purposes of decoupling as much as possible we should take the approach of: if unsure, keep as 1 MFE unless very decoupled with large business model distinction</li>
-<li><a href="https://single-spa.js.org/docs/recommended-setup/"><strong>Recommended Setup</strong></a></li>
-<li>other recommended setups to consider
-<ul>
-<li><a href="https://nx.dev/concepts/module-federation/micro-frontend-architecture">https://nx.dev/concepts/module-federation/micro-frontend-architecture</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="splitting-up-applications">Splitting up applications </h1>
-<p><strong>Options</strong></p>
-<ol>
-<li>One code repo, one build</li>
-<li>NPM packages</li>
-<li>Monorepos</li>
-<li>Dynamic Module Loading</li>
-</ol>
-<h4 id="comparisonhttpssingle-spajsorgdocsseparating-applicationscomparison-direct-link-to-comparison">Comparison<a href="https://single-spa.js.org/docs/separating-applications#comparison" title="Direct link to Comparison">​</a> </h4>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Separate code repositories possible</th>
-<th>Independent CI builds</th>
-<th>Separate deployments</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NPM Packages</td>
-<td>✅</td>
-<td>✅</td>
-<td>❌</td>
-<td><a href="https://github.com/jualoppaz/single-spa-login-example-with-npm-packages">1</a></td>
-</tr>
-<tr>
-<td>Monorepo</td>
-<td>❌</td>
-<td>✅&nbsp;<a href="https://medium.com/labs42/monorepo-with-circleci-conditional-workflows-69e65d3f1bd0">1</a></td>
-<td>✅&nbsp;<a href="https://medium.com/labs42/monorepo-with-circleci-conditional-workflows-69e65d3f1bd0">1</a></td>
-<td><a href="https://github.com/petermikitsh/learn-single-spa">1</a></td>
-</tr>
-<tr>
-<td>Module loading</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td><a href="https://github.com/react-microfrontends/">1</a>&nbsp;<a href="https://github.com/vue-microfrontends/">2</a>&nbsp;<a href="https://github.com/polyglot-microfrontends/">3</a></td>
-</tr>
-</tbody>
-</table>
-<h1 id="shared-dependencies">Shared Dependencies </h1>
-<p>For performance, it is crucial that your web app loads large JavaScript libraries only once. Your framework of choice (React, Vue, Angular, etc) should only be loaded on the page a single time.</p>
-<p>It is not advisable to make everything a shared dependency, because shared dependencies must be upgraded at once for every microfrontend that uses them. For small libraries, it is likely acceptable to duplicate them in each microfrontend that uses them. For example, react-router is likely small enough to duplicate, which is nice when you want to upgrade your routing one microfrontend at a time. However, for large libraries like react, momentjs, rxjs, etc, you may consider making them shared dependencies.</p>
-<p>There are two approaches to sharing dependencies:</p>
-<ol>
-<li><a href="https://single-spa.js.org/docs/recommended-setup/#import-maps">In-browser modules with import maps</a></li>
-<li><a href="https://single-spa.js.org/docs/recommended-setup/#module-federation">Build-time modules with module federation</a></li>
-</ol>
-<p>You may use either one, or both. We currently recommend only using import maps, although we have no objection to module federation.</p>
-<h1 id="state-management">State Management </h1>
-<p>Video tutorial: <a href="https://www.youtube.com/watch?v=432thqUKs-Y">https://www.youtube.com/watch?v=432thqUKs-Y</a></p>
-<h2 id="ui-state">UI State </h2>
-<p><a href="https://single-spa.js.org/docs/recommended-setup/#ui-state">https://single-spa.js.org/docs/recommended-setup/#ui-state</a></p>
-<p><em>If two microfrontends are frequently passing state between each other, consider merging them. The disadvantages of microfrontends are enhanced when your microfrontends are not isolated modules.</em></p>
-<p>UI State, such as "is the modal open," "what's the current value of that input," etc. largely does not need to be shared between microfrontends. If you find yourself needing constant sharing of UI state, your microfrontends are likely more coupled than they should be. Consider merging them into a single microfrontend.</p>
-<h2 id="global-state">Global state </h2>
-<p><a href="https://single-spa.js.org/docs/recommended-setup/#state-management">https://single-spa.js.org/docs/recommended-setup/#state-management</a></p>
-<p>The single-spa core team cautions against using redux, mobx, and other global state management libraries.</p>
-<p>However, if you'd like to use a state management library, we recommend keeping the state management tool specific to a single repository / microfrontend instead of a single store for all of your microfrontends. The reason is that microfrontends are not truly decoupled or framework agnostic if they all must use a global store. You cannot independently deploy a microfrontend if it relies on the global store's state to be a specific shape or have specific actions fired by other microfrontends - to do so you'd have to think really hard about whether your changes to the global store are backwards and forwards compatible with all other microfrontends. Additionally, managing global state during route transitions is hard enough without the complexity of multiple microfrontends contributing to and consuming the global state.</p>
-<p>Instead of a global store, the single-spa core team recommends using local component state for your components, or a store for each of your microfrontends. See the above section "<a href="https://single-spa.js.org/docs/recommended-setup/#inter-app-communication">Inter-app communication</a>" for more related information</p>
-<h2 id="inter-app-communication">Inter-app communication </h2>
-<p><em>A good architecture is one in which microfrontends are decoupled and do not need to frequently communicate. Route-based single-spa applications inherently require less inter-app communication.</em></p>
-<p>There are three things that microfrontends might need to share / communicate:</p>
-<ol>
-<li>Functions, components, logic, and environment variables.</li>
-<li>API data</li>
-<li>UI state</li>
-</ol>
-<p>Functions, components, logic, and environment variables:</p>
-<p>We recommend using&nbsp;<a href="https://single-spa.js.org/docs/recommended-setup/#cross-microfrontend-imports">cross microfrontend imports</a>&nbsp;to share functions, components, logic, and environment variables.</p>
-<h1 id="style-management">Style Management </h1>
-<ul>
-<li><a href="https://github.com/single-spa/single-spa/issues/556">https://github.com/single-spa/single-spa/issues/556</a></li>
-</ul>
-<h4 id="styleguide">Styleguide </h4>
-<p>Reference: <a href="https://single-spa.js.org/docs/ecosystem-css/">https://single-spa.js.org/docs/ecosystem-css/</a></p>
-<p>example: <a href="https://github.com/react-microfrontends/styleguide">https://github.com/react-microfrontends/styleguide</a></p>
-<p>Shared CSS can be seen in the above example</p>
-<h4 id="utility-modules">Utility Modules </h4>
-<p><a href="https://single-spa.js.org/docs/recommended-setup/#utility-modules-styleguide-api-etc">https://single-spa.js.org/docs/recommended-setup/#utility-modules-styleguide-api-etc</a></p>
-<p>A "utility module" is an in-browser JavaScript module that is not a single-spa application or parcel. In other words, it's only purpose is to export functionality for other microfrontends to import.</p>
-<p>Common examples of utility modules include styleguides, authentication helpers, and API helpers. These modules do not need to be registered with single-spa, but are important for maintaining consistency between several single-spa applications and parcels.</p>
-<h1 id="remarks">Remarks </h1>
-<h3 id="todo">TODO </h3>
-<ol>
-<li>Test optimal architecture (basically every MFE needs to interact with the map)</li>
-<li>Test optimal layout (basically every MFE needs to interact with the map)</li>
-<li>Look at security concerns (in the works by Wei Hong's team)</li>
-</ol>
-<h4 id="comments">Comments </h4>
-<p><em>Microfrontends come with a lot of baggage and they make simple things terribly hard. Deployment becomes more complicated - you have to think about if you need a microfrontend registry containing multiple versions of a microfrontend, such that teams would not be forced to immediately react on other teams changes. You also have to setup a reverse proxy, just to load assets without getting a CORS error. Loading an image or a static translation file just does not work anymore without such reverse proxy. Routing can be tricky when you add web components into the mix to increase technological flexibility... The list goes on and on, but the only benefit they would deliver is the independent deployment and lets be honest, who the hell has that many frontend teams working on one product that something like that makes sense. and even then there might be easier organizational approaches than microfrontends. Big no from my side.</em></p>
-<ul>
-<li><a href="https://www.reddit.com/r/Angular2/comments/18grzjl/are_micro_frontends_a_good_fit/">https://www.reddit.com/r/Angular2/comments/18grzjl/are_micro_frontends_a_good_fit/</a></li>
-</ul>
-<p><em>This is a pretty dated article but the core concepts are still valid. Micro-frontends IMO are an excellent way to organize a large web app, especially if shared by multiple teams.</em></p>
-<p><em>HOWEVER you need to be very careful. Micro-frontends tend to introduce a tradeoff between independence and bundle size. The more independent your MFEs are, the more code duplication (mainly dependencies) there is, blowing up your overall application bundle size. The more you share code (mainly dependencies) between your MFEs, the more you create tighter coupling between them and thus make the architecture more brittle.</em></p>
-<p><em>This is why I would only recommend micro-frontends when using module federation, a feature introduced in webpack 5 and now supported by most bundlers. It is an exceptional tool that, among many other things, allows for code sharing between MFEs but in such a way that it is highly resilient to changes.</em></p>
-<ul>
-<li><a href="https://www.reddit.com/r/reactjs/comments/12f6ecr/microfrontends/">https://www.reddit.com/r/reactjs/comments/12f6ecr/microfrontends/</a></li>
-</ul>
-<p><strong>Architecture</strong><br>
-<a href="https://single-spa.js.org/docs/recommended-setup/#applications-versus-parcels-versus-utility-modules">Utility Modules for Shared State &amp; Style Guide</a></p>
-<p>With MFE architecture, a large application is split into:</p>
-<ol>
-<li>A single&nbsp;<strong>Host</strong>&nbsp;application that references external...</li>
-<li><strong>Remote</strong>&nbsp;applications, which handle a single domain or feature.</li>
-</ol>
-<ul>
-<li>main skeletal microFE - main app with top navbar, sidebar, map</li>
-<li>each module can be a microFE (e.g. incident, opslog, VAP, OVH)</li>
-<li>state management
-<ul>
-<li>identify states in a microFE that may possibly affect another state in another microFE)</li>
-<li>ideally UI state should be independent in each microFE (e.g. toggle some settings in settings page which affects UI in another microFE)</li>
-<li>many modules interact with map, making it coupled together
-<ul>
-<li>map is the single thing common across all microFEs</li>
-<li>NOTE: sharing context between microFEs is an anti-pattern since it eliminates the benefits of independent deployments</li>
-<li>will need an API/contract to this handle this sync between map and microFEs</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>Code structure</strong></p>
-<ul>
-<li>identify parts in each microFE that is required throughout the app
-<ul>
-<li>authentication &amp; authorisation (hooks used can be brought out into a utility module)</li>
-<li>styles (import from self-created styleguide utility module)</li>
-</ul>
-</li>
-<li>decide on code arrangement (see part on Splitting up Applications)
-<ol>
-<li>One code repo, one build (webclient is huge, would stay away from this due to long build times)</li>
-<li>NPM packages</li>
-<li>Monorepos</li>
-<li>Dynamic Module Loading</li>
-</ol>
-</li>
-</ul>
-<p><strong>Local Development &amp; Routing</strong></p>
-<ul>
-<li>Routing for local development
-<ul>
-<li><a href="https://www.youtube.com/watch?v=vjjcuIxqIzY&amp;list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&amp;index=5&amp;ab_channel=JoelDenning">https://www.youtube.com/watch?v=vjjcuIxqIzY&amp;list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&amp;index=5&amp;ab_channel=JoelDenning</a></li>
-</ul>
-</li>
-<li>Rollup
-<ul>
-<li><a href="https://www.youtube.com/watch?v=I6COIg-2lyM&amp;ab_channel=JoelDenning">https://www.youtube.com/watch?v=I6COIg-2lyM&amp;ab_channel=JoelDenning</a></li>
-</ul>
-</li>
-</ul>
+    <link
+      rel="stylesheet"
+      href="file:///c:\Users\User\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css"
+    />
 
-      </div>
-      
-      
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        color: #333;
+        background: 0 0;
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.4;
+        -moz-tab-size: 8;
+        -o-tab-size: 8;
+        tab-size: 8;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+      pre[class*="language-"] {
+        padding: 0.8em;
+        overflow: auto;
+        border-radius: 3px;
+        background: #f5f5f5;
+      }
+      :not(pre) > code[class*="language-"] {
+        padding: 0.1em;
+        border-radius: 0.3em;
+        white-space: normal;
+        background: #f5f5f5;
+      }
+      .token.blockquote,
+      .token.comment {
+        color: #969896;
+      }
+      .token.cdata {
+        color: #183691;
+      }
+      .token.doctype,
+      .token.macro.property,
+      .token.punctuation,
+      .token.variable {
+        color: #333;
+      }
+      .token.builtin,
+      .token.important,
+      .token.keyword,
+      .token.operator,
+      .token.rule {
+        color: #a71d5d;
+      }
+      .token.attr-value,
+      .token.regex,
+      .token.string,
+      .token.url {
+        color: #183691;
+      }
+      .token.atrule,
+      .token.boolean,
+      .token.code,
+      .token.command,
+      .token.constant,
+      .token.entity,
+      .token.number,
+      .token.property,
+      .token.symbol {
+        color: #0086b3;
+      }
+      .token.prolog,
+      .token.selector,
+      .token.tag {
+        color: #63a35c;
+      }
+      .token.attr-name,
+      .token.class,
+      .token.class-name,
+      .token.function,
+      .token.id,
+      .token.namespace,
+      .token.pseudo-class,
+      .token.pseudo-element,
+      .token.url-reference .token.variable {
+        color: #795da3;
+      }
+      .token.entity {
+        cursor: help;
+      }
+      .token.title,
+      .token.title .token.punctuation {
+        font-weight: 700;
+        color: #1d3e81;
+      }
+      .token.list {
+        color: #ed6a43;
+      }
+      .token.inserted {
+        background-color: #eaffea;
+        color: #55a532;
+      }
+      .token.deleted {
+        background-color: #ffecec;
+        color: #bd2c00;
+      }
+      .token.bold {
+        font-weight: 700;
+      }
+      .token.italic {
+        font-style: italic;
+      }
+      .language-json .token.property {
+        color: #183691;
+      }
+      .language-markup .token.tag .token.punctuation {
+        color: #333;
+      }
+      .language-css .token.function,
+      code.language-css {
+        color: #0086b3;
+      }
+      .language-yaml .token.atrule {
+        color: #63a35c;
+      }
+      code.language-yaml {
+        color: #183691;
+      }
+      .language-ruby .token.function {
+        color: #333;
+      }
+      .language-markdown .token.url {
+        color: #795da3;
+      }
+      .language-makefile .token.symbol {
+        color: #795da3;
+      }
+      .language-makefile .token.variable {
+        color: #183691;
+      }
+      .language-makefile .token.builtin {
+        color: #0086b3;
+      }
+      .language-bash .token.keyword {
+        color: #0086b3;
+      }
+      pre[data-line] {
+        position: relative;
+        padding: 1em 0 1em 3em;
+      }
+      pre[data-line] .line-highlight-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        display: block;
+        width: 100%;
+      }
+      pre[data-line] .line-highlight {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: inherit 0;
+        margin-top: 1em;
+        background: hsla(24, 20%, 50%, 0.08);
+        background: linear-gradient(
+          to right,
+          hsla(24, 20%, 50%, 0.1) 70%,
+          hsla(24, 20%, 50%, 0)
+        );
+        pointer-events: none;
+        line-height: inherit;
+        white-space: pre;
+      }
+      pre[data-line] .line-highlight:before,
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-start);
+        position: absolute;
+        top: 0.4em;
+        left: 0.6em;
+        min-width: 1em;
+        padding: 0 0.5em;
+        background-color: hsla(24, 20%, 50%, 0.4);
+        color: #f4f1ef;
+        font: bold 65%/1.5 sans-serif;
+        text-align: center;
+        vertical-align: 0.3em;
+        border-radius: 999px;
+        text-shadow: none;
+        box-shadow: 0 1px #fff;
+      }
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-end);
+        top: auto;
+        bottom: 0.4em;
+      }
+      html body {
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        overflow: initial;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
+      html body > :first-child {
+        margin-top: 0;
+      }
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        line-height: 1.2;
+        margin-top: 1em;
+        margin-bottom: 16px;
+        color: #000;
+      }
+      html body h1 {
+        font-size: 2.25em;
+        font-weight: 300;
+        padding-bottom: 0.3em;
+      }
+      html body h2 {
+        font-size: 1.75em;
+        font-weight: 400;
+        padding-bottom: 0.3em;
+      }
+      html body h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      html body h4 {
+        font-size: 1.25em;
+        font-weight: 600;
+      }
+      html body h5 {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      html body h6 {
+        font-size: 1em;
+        font-weight: 600;
+      }
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5 {
+        font-weight: 600;
+      }
+      html body h5 {
+        font-size: 1em;
+      }
+      html body h6 {
+        color: #5c5c5c;
+      }
+      html body strong {
+        color: #000;
+      }
+      html body del {
+        color: #5c5c5c;
+      }
+      html body a:not([href]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      html body a {
+        color: #08c;
+        text-decoration: none;
+      }
+      html body a:hover {
+        color: #00a3f5;
+        text-decoration: none;
+      }
+      html body img {
+        max-width: 100%;
+      }
+      html body > p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        word-wrap: break-word;
+      }
+      html body > ol,
+      html body > ul {
+        margin-bottom: 16px;
+      }
+      html body ol,
+      html body ul {
+        padding-left: 2em;
+      }
+      html body ol.no-list,
+      html body ul.no-list {
+        padding: 0;
+        list-style-type: none;
+      }
+      html body ol ol,
+      html body ol ul,
+      html body ul ol,
+      html body ul ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      html body li {
+        margin-bottom: 0;
+      }
+      html body li.task-list-item {
+        list-style: none;
+      }
+      html body li > p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      html body .task-list-item-checkbox {
+        margin: 0 0.2em 0.25em -1.8em;
+        vertical-align: middle;
+      }
+      html body .task-list-item-checkbox:hover {
+        cursor: pointer;
+      }
+      html body blockquote {
+        margin: 16px 0;
+        font-size: inherit;
+        padding: 0 15px;
+        color: #5c5c5c;
+        background-color: #f0f0f0;
+        border-left: 4px solid #d6d6d6;
+      }
+      html body blockquote > :first-child {
+        margin-top: 0;
+      }
+      html body blockquote > :last-child {
+        margin-bottom: 0;
+      }
+      html body hr {
+        height: 4px;
+        margin: 32px 0;
+        background-color: #d6d6d6;
+        border: 0 none;
+      }
+      html body table {
+        margin: 10px 0 15px 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        width: 100%;
+        overflow: auto;
+        word-break: normal;
+        word-break: keep-all;
+      }
+      html body table th {
+        font-weight: 700;
+        color: #000;
+      }
+      html body table td,
+      html body table th {
+        border: 1px solid #d6d6d6;
+        padding: 6px 13px;
+      }
+      html body dl {
+        padding: 0;
+      }
+      html body dl dt {
+        padding: 0;
+        margin-top: 16px;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 700;
+      }
+      html body dl dd {
+        padding: 0 16px;
+        margin-bottom: 16px;
+      }
+      html body code {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 0.85em;
+        color: #000;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        padding: 0.2em 0;
+      }
+      html body code::after,
+      html body code::before {
+        letter-spacing: -0.2em;
+        content: "\00a0";
+      }
+      html body pre > code {
+        padding: 0;
+        margin: 0;
+        word-break: normal;
+        white-space: pre;
+        background: 0 0;
+        border: 0;
+      }
+      html body .highlight {
+        margin-bottom: 16px;
+      }
+      html body .highlight pre,
+      html body pre {
+        padding: 1em;
+        overflow: auto;
+        line-height: 1.45;
+        border: #d6d6d6;
+        border-radius: 3px;
+      }
+      html body .highlight pre {
+        margin-bottom: 0;
+        word-break: normal;
+      }
+      html body pre code,
+      html body pre tt {
+        display: inline;
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+        overflow: initial;
+        line-height: inherit;
+        word-wrap: normal;
+        background-color: transparent;
+        border: 0;
+      }
+      html body pre code:after,
+      html body pre code:before,
+      html body pre tt:after,
+      html body pre tt:before {
+        content: normal;
+      }
+      html body blockquote,
+      html body dl,
+      html body ol,
+      html body p,
+      html body pre,
+      html body ul {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      html body kbd {
+        color: #000;
+        border: 1px solid #d6d6d6;
+        border-bottom: 2px solid #c7c7c7;
+        padding: 2px 4px;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+      }
+      @media print {
+        html body {
+          background-color: #fff;
+        }
+        html body h1,
+        html body h2,
+        html body h3,
+        html body h4,
+        html body h5,
+        html body h6 {
+          color: #000;
+          page-break-after: avoid;
+        }
+        html body blockquote {
+          color: #5c5c5c;
+        }
+        html body pre {
+          page-break-inside: avoid;
+        }
+        html body table {
+          display: table;
+        }
+        html body img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        html body code,
+        html body pre {
+          word-wrap: break-word;
+          white-space: pre;
+        }
+      }
+      .markdown-preview {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .markdown-preview ul {
+        list-style: disc;
+      }
+      .markdown-preview ul ul {
+        list-style: circle;
+      }
+      .markdown-preview ul ul ul {
+        list-style: square;
+      }
+      .markdown-preview ol {
+        list-style: decimal;
+      }
+      .markdown-preview ol ol,
+      .markdown-preview ul ol {
+        list-style-type: lower-roman;
+      }
+      .markdown-preview ol ol ol,
+      .markdown-preview ol ul ol,
+      .markdown-preview ul ol ol,
+      .markdown-preview ul ul ol {
+        list-style-type: lower-alpha;
+      }
+      .markdown-preview .newpage,
+      .markdown-preview .pagebreak {
+        page-break-before: always;
+      }
+      .markdown-preview pre.line-numbers {
+        position: relative;
+        padding-left: 3.8em;
+        counter-reset: linenumber;
+      }
+      .markdown-preview pre.line-numbers > code {
+        position: relative;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows {
+        position: absolute;
+        pointer-events: none;
+        top: 1em;
+        font-size: 100%;
+        left: 0;
+        width: 3em;
+        letter-spacing: -1px;
+        border-right: 1px solid #999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows > span:before {
+        content: counter(linenumber);
+        color: #999;
+        display: block;
+        padding-right: 0.8em;
+        text-align: right;
+      }
+      .markdown-preview .mathjax-exps .MathJax_Display {
+        text-align: center !important;
+      }
+      .markdown-preview:not([data-for="preview"])
+        .code-chunk
+        .code-chunk-btn-group {
+        display: none;
+      }
+      .markdown-preview:not([data-for="preview"]) .code-chunk .status {
+        display: none;
+      }
+      .markdown-preview:not([data-for="preview"]) .code-chunk .output-div {
+        margin-bottom: 16px;
+      }
+      .markdown-preview .md-toc {
+        padding: 0;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p {
+        display: inline;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+        font-weight: 800;
+      }
+      .scrollbar-style::-webkit-scrollbar {
+        width: 8px;
+      }
+      .scrollbar-style::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      .scrollbar-style::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+      html body[for="html-export"]:not([data-presentation-mode]) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        .markdown-preview {
+        position: relative;
+        top: 0;
+        min-height: 100vh;
+      }
+      @media screen and (min-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em calc(50% - 457px + 2em);
+        }
+      }
+      @media screen and (max-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          font-size: 14px !important;
+          padding: 1em;
+        }
+      }
+      @media print {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          #sidebar-toc-btn {
+          display: none;
+        }
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        #sidebar-toc-btn {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        font-size: 28px;
+        cursor: pointer;
+        color: inherit;
+        z-index: 99;
+        width: 32px;
+        text-align: center;
+        opacity: 0.4;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        #sidebar-toc-btn {
+        opacity: 1;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        padding: 32px 0 48px 0;
+        font-size: 14px;
+        box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+        box-sizing: border-box;
+        overflow: auto;
+        background-color: inherit;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar {
+        width: 8px;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        a {
+        text-decoration: none;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc {
+        padding: 0 16px;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        div,
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        p {
+        display: inline;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper.highlighted
+        .md-toc-link {
+        font-weight: 800;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .markdown-preview {
+        left: 300px;
+        width: calc(100% - 300px);
+        padding: 2em calc(50% - 457px - 300px / 2);
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 1274px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          width: 100%;
+        }
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .markdown-preview {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .md-sidebar-toc {
+        display: none;
+      }
+      /* Please visit the URL below for more information: */
+      /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+    </style>
+    <!-- The content below will be included at the end of the <head> element. -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // your code here
+      });
+    </script>
+  </head>
+  <body for="html-export">
+    <div class="crossnote markdown-preview">
+      <h1 id="table-of-contents">Table of Contents</h1>
+      <ul>
+        <li><a href=".md#Resources">Resources</a></li>
+        <li><a href=".md#Introduction">Introduction</a></li>
+        <li><a href=".md#Single-SPA Setup">Single-SPA Setup</a></li>
+        <li>
+          <a href=".md#Splitting up applications">Splitting up applications</a>
+        </li>
+        <li><a href=".md#Shared Dependencies">Shared Dependencies</a></li>
+        <li>
+          <a href=".md#State Management">State Management</a>
+          <ul>
+            <li><a href=".md#UI State">UI State</a></li>
+            <li><a href=".md#Global state">Global state</a></li>
+            <li>
+              <a href=".md#Inter-app communication">Inter-app communication</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href=".md#Style Management">Style Management</a></li>
+        <li><a href=".md#Remarks">Remarks</a></li>
+      </ul>
+      <h1 id="resources">Resources</h1>
+      <ul>
+        <li>
+          <a
+            href="https://www.canva.com/design/DAF9StVLMd4/ixPbuuAWhrELQHzIo6btNA/edit?utm_content=DAF9StVLMd4&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton"
+            ><strong>Single-SPA Brief - By Samuel</strong></a
+          >
+        </li>
+        <li>
+          <a href="https://martinfowler.com/articles/micro-frontends.html"
+            >https://martinfowler.com/articles/micro-frontends.html</a
+          >
+        </li>
+      </ul>
+      <h1 id="introduction">Introduction</h1>
+      <p>
+        Single-SPA Creator on what is a
+        <a href="https://youtu.be/3EUfbnHi6Wg?si=pLOOe8wWSifV0fn3">MFE</a>
+      </p>
+      <p>
+        Single-SPA is a top level router. When a route is active, it downloads
+        and executes the code for that route.
+      </p>
+      <p>
+        The code for a route is called an "application", and each can
+        (optionally) be in its own git repository, have its own CI process, and
+        be separately deployed. The applications can all be written in the same
+        framework, or they can be implemented in different frameworks.
+      </p>
+      <h1 id="single-spa-setup">Single-SPA Setup</h1>
+      <p>
+        need to decide what to split out from app (tentative)<br />
+        <a href="https://single-spa.js.org/docs/separating-applications"
+          >https://single-spa.js.org/docs/separating-applications</a
+        >
+      </p>
+      <ul>
+        <li>
+          Recommended Approach (tentative)
+          <ul>
+            <li>
+              For the purposes of decoupling as much as possible we should take
+              the approach of: if unsure, keep as 1 MFE unless very decoupled
+              with large business model distinction
+            </li>
+            <li>
+              <a href="https://single-spa.js.org/docs/recommended-setup/"
+                ><strong>Recommended Setup</strong></a
+              >
+            </li>
+            <li>
+              other recommended setups to consider
+              <ul>
+                <li>
+                  <a
+                    href="https://nx.dev/concepts/module-federation/micro-frontend-architecture"
+                    >https://nx.dev/concepts/module-federation/micro-frontend-architecture</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h1 id="splitting-up-applications">Splitting up applications</h1>
+      <p><strong>Options</strong></p>
+      <ol>
+        <li>One code repo, one build</li>
+        <li>NPM packages</li>
+        <li>Monorepos</li>
+        <li>Dynamic Module Loading</li>
+      </ol>
+      <h4
+        id="comparisonhttpssingle-spajsorgdocsseparating-applicationscomparison-direct-link-to-comparison"
+      >
+        Comparison<a
+          href="https://single-spa.js.org/docs/separating-applications#comparison"
+          title="Direct link to Comparison"
+          >​</a
+        >
+      </h4>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Separate code repositories possible</th>
+            <th>Independent CI builds</th>
+            <th>Separate deployments</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NPM Packages</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>
+              <a
+                href="https://github.com/jualoppaz/single-spa-login-example-with-npm-packages"
+                >1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Monorepo</td>
+            <td>❌</td>
+            <td>
+              ✅&nbsp;<a
+                href="https://medium.com/labs42/monorepo-with-circleci-conditional-workflows-69e65d3f1bd0"
+                >1</a
+              >
+            </td>
+            <td>
+              ✅&nbsp;<a
+                href="https://medium.com/labs42/monorepo-with-circleci-conditional-workflows-69e65d3f1bd0"
+                >1</a
+              >
+            </td>
+            <td>
+              <a href="https://github.com/petermikitsh/learn-single-spa">1</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Module loading</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>
+              <a href="https://github.com/react-microfrontends/">1</a>&nbsp;<a
+                href="https://github.com/vue-microfrontends/"
+                >2</a
+              >&nbsp;<a href="https://github.com/polyglot-microfrontends/">3</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 id="shared-dependencies">Shared Dependencies</h1>
+      <p>
+        For performance, it is crucial that your web app loads large JavaScript
+        libraries only once. Your framework of choice (React, Vue, Angular, etc)
+        should only be loaded on the page a single time.
+      </p>
+      <p>
+        It is not advisable to make everything a shared dependency, because
+        shared dependencies must be upgraded at once for every microfrontend
+        that uses them. For small libraries, it is likely acceptable to
+        duplicate them in each microfrontend that uses them. For example,
+        react-router is likely small enough to duplicate, which is nice when you
+        want to upgrade your routing one microfrontend at a time. However, for
+        large libraries like react, momentjs, rxjs, etc, you may consider making
+        them shared dependencies.
+      </p>
+      <p>There are two approaches to sharing dependencies:</p>
+      <ol>
+        <li>
+          <a
+            href="https://single-spa.js.org/docs/recommended-setup/#import-maps"
+            >In-browser modules with import maps</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://single-spa.js.org/docs/recommended-setup/#module-federation"
+            >Build-time modules with module federation</a
+          >
+        </li>
+      </ol>
+      <p>
+        You may use either one, or both. We currently recommend only using
+        import maps, although we have no objection to module federation.
+      </p>
+      <h1 id="state-management">State Management</h1>
+      <p>
+        Video tutorial:
+        <a href="https://www.youtube.com/watch?v=432thqUKs-Y"
+          >https://www.youtube.com/watch?v=432thqUKs-Y</a
+        >
+      </p>
+      <h2 id="ui-state">UI State</h2>
+      <p>
+        <a href="https://single-spa.js.org/docs/recommended-setup/#ui-state"
+          >https://single-spa.js.org/docs/recommended-setup/#ui-state</a
+        >
+      </p>
+      <p>
+        <em
+          >If two microfrontends are frequently passing state between each
+          other, consider merging them. The disadvantages of microfrontends are
+          enhanced when your microfrontends are not isolated modules.</em
+        >
+      </p>
+      <p>
+        UI State, such as "is the modal open," "what's the current value of that
+        input," etc. largely does not need to be shared between microfrontends.
+        If you find yourself needing constant sharing of UI state, your
+        microfrontends are likely more coupled than they should be. Consider
+        merging them into a single microfrontend.
+      </p>
+      <h2 id="global-state">Global state</h2>
+      <p>
+        <a
+          href="https://single-spa.js.org/docs/recommended-setup/#state-management"
+          >https://single-spa.js.org/docs/recommended-setup/#state-management</a
+        >
+      </p>
+      <p>
+        The single-spa core team cautions against using redux, mobx, and other
+        global state management libraries.
+      </p>
+      <p>
+        However, if you'd like to use a state management library, we recommend
+        keeping the state management tool specific to a single repository /
+        microfrontend instead of a single store for all of your microfrontends.
+        The reason is that microfrontends are not truly decoupled or framework
+        agnostic if they all must use a global store. You cannot independently
+        deploy a microfrontend if it relies on the global store's state to be a
+        specific shape or have specific actions fired by other microfrontends -
+        to do so you'd have to think really hard about whether your changes to
+        the global store are backwards and forwards compatible with all other
+        microfrontends. Additionally, managing global state during route
+        transitions is hard enough without the complexity of multiple
+        microfrontends contributing to and consuming the global state.
+      </p>
+      <p>
+        Instead of a global store, the single-spa core team recommends using
+        local component state for your components, or a store for each of your
+        microfrontends. See the above section "<a
+          href="https://single-spa.js.org/docs/recommended-setup/#inter-app-communication"
+          >Inter-app communication</a
+        >" for more related information
+      </p>
+      <h2 id="inter-app-communication">Inter-app communication</h2>
+      <p>
+        <em
+          >A good architecture is one in which microfrontends are decoupled and
+          do not need to frequently communicate. Route-based single-spa
+          applications inherently require less inter-app communication.</em
+        >
+      </p>
+      <p>
+        There are three things that microfrontends might need to share /
+        communicate:
+      </p>
+      <ol>
+        <li>Functions, components, logic, and environment variables.</li>
+        <li>API data</li>
+        <li>UI state</li>
+      </ol>
+      <p>Functions, components, logic, and environment variables:</p>
+      <p>
+        We recommend using&nbsp;<a
+          href="https://single-spa.js.org/docs/recommended-setup/#cross-microfrontend-imports"
+          >cross microfrontend imports</a
+        >&nbsp;to share functions, components, logic, and environment variables.
+      </p>
+      <h1 id="style-management">Style Management</h1>
+      <ul>
+        <li>
+          <a href="https://github.com/single-spa/single-spa/issues/556"
+            >https://github.com/single-spa/single-spa/issues/556</a
+          >
+        </li>
+      </ul>
+      <h4 id="styleguide">Styleguide</h4>
+      <p>
+        Reference:
+        <a href="https://single-spa.js.org/docs/ecosystem-css/"
+          >https://single-spa.js.org/docs/ecosystem-css/</a
+        >
+      </p>
+      <p>
+        example:
+        <a href="https://github.com/react-microfrontends/styleguide"
+          >https://github.com/react-microfrontends/styleguide</a
+        >
+      </p>
+      <p>Shared CSS can be seen in the above example</p>
+      <h4 id="utility-modules">Utility Modules</h4>
+      <p>
+        <a
+          href="https://single-spa.js.org/docs/recommended-setup/#utility-modules-styleguide-api-etc"
+          >https://single-spa.js.org/docs/recommended-setup/#utility-modules-styleguide-api-etc</a
+        >
+      </p>
+      <p>
+        A "utility module" is an in-browser JavaScript module that is not a
+        single-spa application or parcel. In other words, it's only purpose is
+        to export functionality for other microfrontends to import.
+      </p>
+      <p>
+        Common examples of utility modules include styleguides, authentication
+        helpers, and API helpers. These modules do not need to be registered
+        with single-spa, but are important for maintaining consistency between
+        several single-spa applications and parcels.
+      </p>
+      <h1 id="remarks">Remarks</h1>
+      <h3 id="todo">TODO</h3>
+      <ol>
+        <li>
+          Test optimal architecture (basically every MFE needs to interact with
+          the map)
+        </li>
+        <li>
+          Test optimal layout (basically every MFE needs to interact with the
+          map)
+        </li>
+        <li>Look at security concerns (in the works by Wei Hong's team)</li>
+      </ol>
+      <h4 id="comments">Comments</h4>
+      <p>
+        <em
+          >Microfrontends come with a lot of baggage and they make simple things
+          terribly hard. Deployment becomes more complicated - you have to think
+          about if you need a microfrontend registry containing multiple
+          versions of a microfrontend, such that teams would not be forced to
+          immediately react on other teams changes. You also have to setup a
+          reverse proxy, just to load assets without getting a CORS error.
+          Loading an image or a static translation file just does not work
+          anymore without such reverse proxy. Routing can be tricky when you add
+          web components into the mix to increase technological flexibility...
+          The list goes on and on, but the only benefit they would deliver is
+          the independent deployment and lets be honest, who the hell has that
+          many frontend teams working on one product that something like that
+          makes sense. and even then there might be easier organizational
+          approaches than microfrontends. Big no from my side.</em
+        >
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://www.reddit.com/r/Angular2/comments/18grzjl/are_micro_frontends_a_good_fit/"
+            >https://www.reddit.com/r/Angular2/comments/18grzjl/are_micro_frontends_a_good_fit/</a
+          >
+        </li>
+      </ul>
+      <p>
+        <em
+          >This is a pretty dated article but the core concepts are still valid.
+          Micro-frontends IMO are an excellent way to organize a large web app,
+          especially if shared by multiple teams.</em
+        >
+      </p>
+      <p>
+        <em
+          >HOWEVER you need to be very careful. Micro-frontends tend to
+          introduce a tradeoff between independence and bundle size. The more
+          independent your MFEs are, the more code duplication (mainly
+          dependencies) there is, blowing up your overall application bundle
+          size. The more you share code (mainly dependencies) between your MFEs,
+          the more you create tighter coupling between them and thus make the
+          architecture more brittle.</em
+        >
+      </p>
+      <p>
+        <em
+          >This is why I would only recommend micro-frontends when using module
+          federation, a feature introduced in webpack 5 and now supported by
+          most bundlers. It is an exceptional tool that, among many other
+          things, allows for code sharing between MFEs but in such a way that it
+          is highly resilient to changes.</em
+        >
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://www.reddit.com/r/reactjs/comments/12f6ecr/microfrontends/"
+            >https://www.reddit.com/r/reactjs/comments/12f6ecr/microfrontends/</a
+          >
+        </li>
+      </ul>
+      <p>
+        <strong>Architecture</strong><br />
+        <a
+          href="https://single-spa.js.org/docs/recommended-setup/#applications-versus-parcels-versus-utility-modules"
+          >Utility Modules for Shared State &amp; Style Guide</a
+        >
+      </p>
+      <p>With MFE architecture, a large application is split into:</p>
+      <ol>
+        <li>
+          A single&nbsp;<strong>Host</strong>&nbsp;application that references
+          external...
+        </li>
+        <li>
+          <strong>Remote</strong>&nbsp;applications, which handle a single
+          domain or feature.
+        </li>
+      </ol>
+      <ul>
+        <li>main skeletal microFE - main app with top navbar, sidebar, map</li>
+        <li>each module can be a microFE (e.g. incident, opslog, VAP, OVH)</li>
+        <li>
+          state management
+          <ul>
+            <li>
+              identify states in a microFE that may possibly affect another
+              state in another microFE)
+            </li>
+            <li>
+              ideally UI state should be independent in each microFE (e.g.
+              toggle some settings in settings page which affects UI in another
+              microFE)
+            </li>
+            <li>
+              many modules interact with map, making it coupled together
+              <ul>
+                <li>map is the single thing common across all microFEs</li>
+                <li>
+                  NOTE: sharing context between microFEs is an anti-pattern
+                  since it eliminates the benefits of independent deployments
+                </li>
+                <li>
+                  will need an API/contract to this handle this sync between map
+                  and microFEs
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Code structure</strong></p>
+      <ul>
+        <li>
+          identify parts in each microFE that is required throughout the app
+          <ul>
+            <li>
+              authentication &amp; authorisation (hooks used can be brought out
+              into a utility module)
+            </li>
+            <li>styles (import from self-created styleguide utility module)</li>
+          </ul>
+        </li>
+        <li>
+          decide on code arrangement (see part on Splitting up Applications)
+          <ol>
+            <li>
+              One code repo, one build (webclient is huge, would stay away from
+              this due to long build times)
+            </li>
+            <li>NPM packages</li>
+            <li>Monorepos</li>
+            <li>Dynamic Module Loading</li>
+          </ol>
+        </li>
+      </ul>
+      <p><strong>Local Development &amp; Routing</strong></p>
+      <ul>
+        <li>
+          Routing for local development
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=vjjcuIxqIzY&amp;list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&amp;index=5&amp;ab_channel=JoelDenning"
+                >https://www.youtube.com/watch?v=vjjcuIxqIzY&amp;list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&amp;index=5&amp;ab_channel=JoelDenning</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          Rollup
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=I6COIg-2lyM&amp;ab_channel=JoelDenning"
+                >https://www.youtube.com/watch?v=I6COIg-2lyM&amp;ab_channel=JoelDenning</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
